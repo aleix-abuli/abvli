@@ -269,9 +269,126 @@ body {
     text-decoration: none;
 }
 
+/* ---------- SECTION 3 ---------- */
+
+#section3 {
+    display: flex;
+}
+
+.sect3flex1 {
+    width: 25vw;
+    height: 100vh;
+}
+
+.image9 {
+    width: 25vw;
+    height: 70vh;
+    background-image: url('images/section3-1.jpg');
+    background-size: cover;
+    background-size: center;
+}
+
+.image10 {
+    width: 25vw;
+    height: 30vh;
+    background-image: url('images/section3-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.sect3flex2 {
+    width: 30vw;
+    height: 100vh;
+}
+
+.sect3info {
+    /* width: 30vw; */
+    height: 40vh;
+    color: #0a1574;
+    background-color: #f93030;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sect3info p {
+    font-size: 0.9vw;
+    width: 90%;
+    margin: 0.5vw 0;
+}
+
+.sect3info p:nth-child(1) {
+    margin-top: 3vh;
+}
+
+.sect3info a {
+    color: #0a1574;
+}
+
+.image11 {
+    /* width: 30vw; */
+    height: 60vh;
+    background-image: url('images/section3-3.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.sect3flex3 {
+    height: 100vh;
+}
+
+.image12 {
+    width: 45vw;
+    height: 40vh;
+    background-image: url('images/section3-4.jpg');
+    background-size: cover;
+    background-position: left 10%;
+}
+
+.image13 {
+    width: 45vw;
+    height: 60vh;
+    background-image: url('images/section3-5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 /* ------------------ MEDIA QUERIES ------------------ */
 
 @media only screen and (max-width: 991.9px) {
+
+    .nextSect a {
+        display: none;
+    }
+
+    .subtitle {
+        width: auto;
+        position: static;
+        word-break: break-all;
+    }
+
+    .subtitle h2 {
+        position: static;
+        transform: rotate(0deg);
+        font-size: 20vw;
+        text-align: end;
+        width: 90%;
+    }
+
+    .vertical {
+        width: 100vw;
+        height: 150vw;
+    }
+
+    .horizontal {
+        width: 100vw;
+        height: 50vw;
+    }
+
+    .square {
+        width: 100vw;
+        height: 100vw;
+    }
 
     /* --- Header --- */
     .headContainer {
@@ -307,7 +424,7 @@ body {
 
     .headImg {
         width: 100vw;
-        height: calc(100vh - 50vw);
+        height: 150vw;
     }
 
     /* --- Section 1 --- */
@@ -315,18 +432,8 @@ body {
         flex-direction: column;
     }
 
-    .image1 {
-        width: 100vw;
-        height: 150vw;
-    }
-
     .section1Container {
         width: 100vw;
-    }
-
-    .image2 {
-        width: 100vw;
-        height: 100vw;
     }
 
     .introduction {
@@ -343,14 +450,59 @@ body {
         margin-top: auto;
     }
 
-    .introduction a {
+    /* --- Section 2 --- */
+    #section2 {
+        flex-direction: column;
+    }
+
+    .sect2flex1 {
+        width: 100vw;
+    }
+
+    .sect2flex2 {
+        width: 100vw;
+        height: auto;
+    }
+
+    .instaDiv {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .instaDiv p {
+        font-size: 5vw;
+    }
+
+    .instaDiv i {
+        font-size: 20vw;
+    }
+
+    .scrollD {
         display: none;
     }
 
-    .image3 {
-        width: 100vw;
-        height: 150vw;
+    /* --- Section 3 --- */
+    #section3 {
+        flex-direction: column;
+        height: auto;
     }
 
-    /* --- Section 2 --- */
+    .sect3flex1,
+    .sect3flex2 {
+        height: auto;
+    }
+
+    .sect3info {
+        width: 100vw;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .sect3info p {
+        font-size: 3vw;
+    }
+
+    .sect3info p:nth-child(1) {
+        margin-top: auto;
+    }
 }
